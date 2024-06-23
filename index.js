@@ -6,7 +6,7 @@ const error = document.querySelector("#error");
 const handleDecrement = (currentValue) => {
   --currentValue;
 
-  if (currentValue <= 1) clrBtn.classList.remove("active");
+  if (currentValue < 1) clrBtn.classList.remove("active");
   if (currentValue < 0) {
     error.classList.add("active");
     return;
