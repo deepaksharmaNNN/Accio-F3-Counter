@@ -18,7 +18,7 @@ const handleDecrement = (currentValue) => {
 const handleIncrement = (currentValue) => {
   ++currentValue;
   if (currentValue > 0)  error.classList.remove("active");
-  if(currentValue > 1)  clrBtn.classList.add("active");
+  if(currentValue >= 1)  clrBtn.classList.add("active");
   count.innerHTML = currentValue;
 };
 
